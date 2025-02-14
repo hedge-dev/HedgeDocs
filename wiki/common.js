@@ -19,7 +19,7 @@ function makeImagesClickable() {
     const background = document.querySelector('.imagePreview-background')
     background.addEventListener('click', hideImagePreview)
     
-    const images = document.querySelectorAll("figure[typeof~='mw:File/Thumb'] a, .hedgedocs-infobox-image a")
+    const images = document.querySelectorAll("figure[typeof~='mw:File/Thumb'] a, .hedgedocs-infobox-image a, .gallery .gallerybox .thumb a")
     
     for(let i = 0; i < images.length; i++) {
         const imageClickable = images[i]
@@ -28,7 +28,7 @@ function makeImagesClickable() {
         let originalLocation = imageClickable.getAttribute('data-image-page')
         if (!originalLocation) {
             originalLocation = imageClickable.href
-            imageClickable.href = '#'
+            imageClickable.removeAttribute('href')
             imageClickable.setAttribute('data-image-page', originalLocation)
         }
 
