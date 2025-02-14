@@ -1,0 +1,65 @@
+/* HEDDGEDOCS DARK THEME TWEAKS */
+
+html.skin-theme-clientpref-night, .skin-theme-clientpref-night * {
+    // Nullify auto dark mode
+    filter: none !important;
+}
+
+.skin-theme-clientpref-night {
+    // Invert all vector icons
+    .mw-page-container .vector-icon {
+        filter: invert() !important;
+    }
+
+    .vector-icon.mw-ui-icon-listBullet {
+        filter: none !important;
+    }
+
+    .vector-icon.mw-ui-icon-wikimedia-unStar, .vector-icon.mw-ui-icon-wikimedia-star, .vector-icon.mw-ui-icon-wikimedia-expand {
+        filter: none !important;
+    }
+
+    // Header Links
+    #vector-page-tools-dropdown-label {
+        color: var(--hedgedocs-fg-color);
+        transition: color 0s;
+    }
+    
+    // Header
+    .mw-header .vector-icon:not(.vector-dropdown-content .vector-icon) {
+        filter: brightness(2) !important;
+    }
+
+    .ext-darkmode-link::after {
+        content: '\263C';
+    }
+
+    .mw-list-item span#skin-theme-beta-notice {
+        display: none !important;
+    }
+
+    // search input
+    #searchInput, .cdx-text-input__input:enabled, .cdx-text-input__input {
+        background-color: var(--hedgedocs-input-bg-color) !important;
+        border-color: var(--hedgedocs-input-border-color) !important;
+        color: var(--hedgedocs-input-fg-color) !important;
+    }
+
+    // Editor
+    .oo-ui-iconElement-icon:not(.oo-ui-checkboxInputWidget-checkIcon, .oo-ui-image-progressive, .oo-ui-icon-error), .oo-ui-indicatorElement-indicator {
+        filter: invert() !important;
+    }
+}
+
+.ext-darkmode-link::after {
+    content: '\263E';
+    display: inline-block;
+}
+
+span#skin-theme-beta-notice {
+    display: none !important;
+}
+
+#skin-client-prefs-skin-theme .cdx-radio:first-child {
+    display: none;
+}

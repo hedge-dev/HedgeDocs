@@ -1,0 +1,29 @@
+/* HEDDGEDOCS MAIN CSS */
+@import url('./hedgedocs-palette.less');
+@import url('./hedgedocs-dark-tweaks.less');
+@import url('./hedgedocs-fonts.less');
+@import url('./hedgedocs-styling.less');
+@import url('./hedgedocs-custom.less');
+
+// Setup Hidden Elements
+.vector-main-menu-action-opt-out {
+    display: none;
+}
+.vector-settings {
+    display: none;
+}
+li#ca-talk, li#ca-nstab-main {
+    display: none;
+}
+div.vector-page-toolbar-container {
+    box-shadow: none;
+    background-color: var(--hedgedocs-bg-color-secondary);
+    padding: 0 10px;
+}
+.vector-page-titlebar::after {
+    display: none !important;
+}
+.mw-portlet-skin-client-prefs-vector-feature-custom-font-size {
+    display: none;
+}
+.mw-editsection { display:none; }

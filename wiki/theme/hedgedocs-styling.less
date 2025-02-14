@@ -1,0 +1,373 @@
+/* HEDGEDOCS PAGE STYLING CSS */
+
+// ## Logo ##
+.mw-logo-wordmark {
+    font-size: 17pt;
+}
+.mw-logo-icon {
+    font-size: 7pt;
+    padding-left: 1.5em;
+}
+.mw-logo {
+    transition: opacity .25s;
+}
+.mw-logo:hover {
+    opacity: 0.7;
+}
+
+// ## Sidebars ##
+div.vector-pinnable-header-label, h2.vector-pinnable-header-label {
+    background: var(--hedgedocs-header-color);
+    color: var(--hedgedocs-header-fg-color);
+    padding: 2px 10px 2px 10px;
+    cursor: default;
+    margin: 0em !important;
+}
+button.vector-pinnable-header-toggle-button {
+    width: 100%;
+    text-align: center;
+    font-size: var(--hedgedocs-font-size-sidebars-pin-button);
+    background-color: var(--hedgedocs-button-bg-color);
+    padding: 2px 10px 2px 10px;
+    transition: background-color 0.1s;
+    margin-bottom: 0.5rem;
+}
+button.vector-pinnable-header-toggle-button:hover {
+    background-color: var(--hedgedocs-button-bg-color-hover);
+}
+div.vector-pinnable-header {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+div.vector-pinnable-element div.vector-menu-heading {
+    color: var(--hedgedocs-fg-color-light);
+    font-weight: bold;
+    cursor: default;
+    padding: 6px 0;
+    border-bottom: none;
+}
+// Main Menu Items
+#vector-main-menu .vector-menu-content .mw-list-item {
+    //background-color: var(--hedgedocs-accent-color);
+    //color: var(--hedgedocs-header-fg-color) !important;
+    //transition: background-color 125ms;
+}
+#vector-main-menu .vector-menu-content .mw-list-item:hover {
+    //background-color: var(--hedgedocs-accent-color-secondary);
+}
+#vector-main-menu .vector-menu-content .mw-list-item a {
+    //color: var(--hedgedocs-header-fg-color) !important;
+    //padding: 8px 10px 8px 10px;
+    font-weight: bold;
+    text-decoration: none !important;
+}
+#vector-main-menu .vector-menu-content .mw-list-item a:hover {
+    //color: var(--hedgedocs-header-fg-color) !important;
+    text-decoration: none !important;
+}
+#vector-main-menu .vector-menu-content .mw-list-item {
+    margin-bottom: 0;
+}
+.mw-list-item a, .vector-toc-link {
+    color: var(--hedgedocs-fg-color) !important;
+    transition: color 125ms;
+}
+.mw-list-item a:hover, .vector-toc-link:hover {
+    color: var(--hedgedocs-link-hover) !important;
+    text-decoration: none;
+}
+.vector-toc .vector-toc-list-item-active > a.vector-toc-link, .vector-toc .vector-toc-level-1-active:not(.vector-toc-list-item-expanded) > a.vector-toc-link, .vector-toc .vector-toc-list-item-active.vector-toc-level-1-active > a.vector-toc-link {
+    color: var(--hedgedocs-link-active-color) !important;
+    font-weight: inherit;
+}
+.vector-pinnable-element, .vector-pinnable-header-label {
+    font-size: var(--hedgedocs-font-size-sidebars) !important;
+}
+.vector-pinned-container {
+    background-color: var(--hedgedocs-bg-color) !important;
+}
+.vector-sticky-pinned-container::after {
+    background: linear-gradient(rgba(255, 255, 255, 0), var(--hedgedocs-bg-color)) !important;
+}
+
+// ## Table of Contents (TOC) ##
+#toc-mw-content-text {
+    display: none;
+}
+div.vector-toc-pinnable-header {
+    margin-bottom: .25rem;
+}
+.vector-toc .vector-toc-toggle {
+    top: 4px !important;
+}
+.vector-toc button.vector-pinnable-header-toggle-button {
+    display: none !important;
+}
+.vector-toc .vector-toc-list-item-active > a.vector-toc-link span, .vector-toc .vector-toc-level-1-active:not(.vector-toc-list-item-expanded) > a.vector-toc-link span, .vector-toc .vector-toc-list-item-active.vector-toc-level-1-active > a.vector-toc-link span {
+    border-left: .25em solid;
+    padding-left: .5em;
+}
+
+// ## Page Title ##
+.vector-page-titlebar .firstHeading {
+    padding-bottom: 6px !important;
+}
+.firstHeading.mw-first-heading {
+    font-size: 2.2rem;
+}
+
+// ## Header Links ##
+.vector-menu-tabs .mw-list-item.vector-tab-noicon > a, #vector-page-tools-dropdown-label {
+    padding: 9px 0 7px 0 !important;
+}
+
+// ## Header ##
+.vector-header-container header.mw-header, .vector-header-container div.vector-sticky-header {
+    background-color: transparent;
+    max-width: 99.75rem;
+}
+.vector-feature-limited-width-clientpref-0 .vector-header-container header.mw-header, .vector-header-container div.vector-sticky-header {
+    max-width: none;
+}
+.vector-header-container {
+    background-color: var(--hedgedocs-header-color);
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3), 0 0.4rem 4rem rgba(0, 0, 0, 0.15);
+    align-items: center;
+    justify-content: center;
+    min-height: 5rem;
+    margin-bottom: 1rem;
+}
+.vector-header-container div.vector-sticky-header {
+    color: var(--hedgedocs-header-fg-color);
+    border: none;
+}
+.vector-header-container .vector-button-flush-left {
+    margin-right: -24px;
+}
+.vector-header-container .vector-header-start .vector-button-flush-right {
+    margin-right: -24px;
+}
+.vector-header-container .vector-header-end .vector-button-flush-right {
+    margin-right: -6px;
+}
+.vector-header-container div.vector-sticky-header .vector-icon {
+    filter: invert();
+}
+.mw-header a:not(.vector-menu-content a, a.cdx-typeahead-search__search-footer), .mw-header a:visited:not(.vector-menu-content a), .user-links-collapsible-item a:not(.vector-dropdown-content .user-links-collapsible-item a) {
+    color: var(--hedgedocs-header-fg-color) !important;
+}
+.mw-header a:not(.vector-menu-content a, a.cdx-typeahead-search__search-footer):hover, .mw-header a:visited:not(.vector-menu-content a):hover, .user-links-collapsible-item a:not(.vector-dropdown-content .user-links-collapsible-item a):hover {
+    color: var(--hedgedocs-header-fg-color) !important;
+}
+.vector-dropdown div.vector-dropdown-content {
+    background-color: var(--hedgedocs-bg-color);
+}
+.mw-header .vector-icon:not(.vector-dropdown-content .vector-icon ) {
+    filter: invert();
+}
+.vector-user-menu-logged-in .vector-dropdown-label::after {
+    background-color: var(--hedgedocs-header-fg-color) !important;
+}
+.mw-header .vector-icon:not(.vector-dropdown-content .vector-icon) {
+    filter: invert() brightness(2);
+}
+.vector-header .cdx-button.cdx-button--icon-only {
+    min-width: 32px !important;
+}
+@media screen and (max-width: calc(639px)) {
+    .vector-header {
+        flex-flow: row !important;
+    }
+    .mw-logo {
+        min-width: 11em !important;
+    }
+}
+
+.cdx-menu {
+    color: var(--hedgedocs-fg-color);
+}
+
+// ## Footer ##
+.mw-footer li {
+    color: var(--hedgedocs-fg-color) !important;
+}
+
+// ## Inputs ##
+#searchInput, .cdx-text-input__input:enabled, .cdx-text-input__input {
+    background-color: var(--hedgedocs-input-bg-color) !important;
+    border-color: var(--hedgedocs-input-border-color) !important;
+    color: var(--hedgedocs-input-fg-color) !important;
+}
+.oo-ui-checkboxInputWidget [type='checkbox'] + span {
+    background-color: var(--hedgedocs-input-bg-color);
+    color: var(--hedgedocs-fg-color);
+}
+.oo-ui-textInputWidget input.oo-ui-inputWidget-input{
+    background-color: var(--hedgedocs-input-bg-color);
+}
+.oo-ui-textInputWidget .oo-ui-inputWidget-input, .oo-ui-textInputWidget .oo-ui-inputWidget-input, .oo-ui-tagMultiselectWidget.oo-ui-widget-enabled {
+    background-color: var(--hedgedocs-input-bg-color) !important;
+    color: var(--hedgedocs-input-fg-color) !important;
+}
+// Search icon
+.cdx-text-input__input:enabled~.cdx-text-input__icon-vue {
+    color: var(--hedgedocs-input-fg-color) !important;
+    opacity: 0.5 !important;
+}
+span.cdx-text-input__icon.cdx-text-input__start-icon {
+    background-color: var(--hedgedocs-input-fg-color) !important;
+    opacity: 0.5 !important;
+}
+textarea {
+    background-color: var(--hedgedocs-bg-color);
+}
+button.cdx-button, button.cdx-button:enabled, .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button {
+    background-color: var(--hedgedocs-button-bg-color);
+    border: none;
+    transition: background-color 0.1s;
+}
+button.cdx-button:hover, .oo-ui-buttonElement-framed.oo-ui-widget-enabled > .oo-ui-buttonElement-button:hover {
+    background-color: var(--hedgedocs-button-bg-color-hover) !important;
+}
+.cdx-button.cdx-button--weight-primary.cdx-button--action-progressive, .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button, .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-tool-link {
+    background-color: var(--hedgedocs-button-accent-bg-color) !important;
+    transition: background-color 0.1s;
+}
+.cdx-button.cdx-button--weight-primary.cdx-button--action-progressive:hover, .oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-buttonElement-button:hover, .oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-tool-link:hover {
+    background-color: var(--hedgedocs-button-accent-bg-color-hover) !important;
+}
+.cdx-radio__icon {
+    background-color: var(--hedgedocs-button-bg-color) !important;
+}
+.cdx-radio:hover .cdx-radio__icon {
+    background-color: var(--hedgedocs-button-bg-color-hover) !important;
+}
+.cdx-radio__input:enabled:checked+.cdx-radio__icon {
+    background-color: var(--hedgedocs-button-check-fg-color) !important;
+    border-color: var(--hedgedocs-button-check-bg-color) !important;
+}
+.oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type='checkbox']:checked + span, .oo-ui-checkboxInputWidget.oo-ui-widget-enabled [type='checkbox']:indeterminate + span {
+    background-color: var(--hedgedocs-button-check-bg-color) !important;
+}
+// Template Editor
+.oo-ui-buttonElement-framed.oo-ui-widget-enabled.oo-ui-buttonElement-active > .oo-ui-buttonElement-button {
+    background-color: var(--hedgedocs-button-accent-bg-color) !important;
+    color: var(--hedgedocs-button-accent-fg-color) !important;
+}
+.tdg-templateDataParamWidget-param-alias:first-child {
+    background-color: var(--hedgedocs-bg-color-secondary) !important;
+    color: var(--hedgedocs-fg-color-light) !important;
+    border-color: var(--hedgedocs-base-border-color);
+}
+
+
+// ## Editor ##
+.oo-ui-toolbar-bar {
+    background-color: var(--hedgedocs-bg-color-secondary) !important;
+    color: var(--hedgedocs-fg-color) !important;
+}
+.oo-ui-menuToolGroup, .oo-ui-toolbar-position-top > .oo-ui-toolbar-bar {
+    border-color: var(--hedgedocs-bg-color) !important;
+}
+.oo-ui-tool.oo-ui-widget-enabled.oo-ui-flaggedElement-primary.oo-ui-flaggedElement-progressive > .oo-ui-tool-link {
+    color: var(--hedgedocs-header-fg-color) !important;
+    background-color: var(--hedgedocs-header-color) !important;
+}
+.editOptions {
+    background-color: var(--hedgedocs-bg-color-secondary);
+    color: var(--hedgedocs-fg-color);
+}
+.editCheckboxes {
+    margin-bottom: .5rem;
+}
+
+// ## Form ##
+.oo-ui-panelLayout-framed {
+    border: none;
+    background-color: var(--hedgedocs-frame-bg-color);
+}
+.oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget-selected {
+    background-color: var(--hedgedocs-frame-bg-color) !important;
+}
+
+.oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget.oo-ui-widget-enabled.oo-ui-optionWidget-selected .oo-ui-labelElement-label, .oo-ui-tabSelectWidget-framed .oo-ui-tabOptionWidget .oo-ui-labelElement-label {
+    border: none !important;
+}
+
+// ## ApprovedRevs ##
+.approved-revision {
+    background-color: transparent !important;
+    border: 3px solid;
+    color: var(--hedgedocs-fg-color) !important;
+}
+
+// ## Page Content ##
+#mw-content-text {
+    margin-top: 0 !important;
+}
+// Images
+figure[typeof~='mw:File/Thumb'] {
+    background-color: transparent !important;
+    border: none !important;
+    margin-bottom: 0.5em !important;
+}
+
+figure[typeof~='mw:File/Thumb'].mw-halign-left {
+    margin-bottom: 0.5em !important;
+}
+
+figure[typeof~='mw:File/Thumb'] > .mw-file-description > img {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+figure[typeof~='mw:File/Thumb'] > .mw-file-description::after {
+    display: none !important;
+}
+
+figure[typeof~='mw:File/Thumb'] > figcaption {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 5px !important;
+}
+// Links
+.mw-body-content a {
+    color: var(--hedgedocs-link-color);
+}
+.mw-body-content a:visited, .mw-body-content a:visited:hover{
+    color: var(--hedgedocs-link-color);
+}
+.mw-body-content a.new {
+    color: var(--hedgedocs-new-link-color);
+}
+.mw-body-content a.new:visited, .mw-body-content a.new:visited:hover{
+    color: var(--hedgedocs-new-link-color);
+}
+// Tables
+.wikitable > tr > th, .wikitable > * > tr > th {
+    background-color: var(--hedgedocs-table-header-bg-color) !important;
+    color: var(--hedgedocs-table-header-fg-color) !important;
+}
+.wikitable > tr > th, .wikitable > tr > td, .wikitable > * > tr > th, .wikitable > * > tr > td {
+    background-color: var(--hedgedocs-table-data-bg-color);
+    color: var(--hedgedocs-fg-color);
+}
+.wikitable > tr > th, .wikitable > tr > td, .wikitable > * > tr > th, .wikitable > * > tr > td {
+    border: 1px solid var(--hedgedocs-table-border-color) !important;
+    padding: 5px 9px;
+}
+// Code and Pre
+code, pre {
+    background-color: var(--hedgedocs-frame-bg-color);
+    border-color: var(--hedgedocs-base-border-color);
+    color: var(--hedgedocs-fg-color-light);
+    scrollbar-color: var(--hedgedocs-scrollbar-color) transparent;
+}
+pre {
+    overflow: auto;
+    white-space: pre;
+}

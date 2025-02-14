@@ -1,0 +1,112 @@
+/* HEDDGEDOCS COLOR PALETTES */
+
+// Light/Default Theme
+:root {
+    --hedgedocs-accent-color: #3e7e9e;
+    --hedgedocs-accent-color-secondary: #4d9ec7;
+    
+    --hedgedocs-base-border-color: #adb5c2;
+
+    --hedgedocs-frame-bg-color: #e9ebec;
+
+    --hedgedocs-scrollbar-color: #888888;
+
+    --hedgedocs-bg-color: #f0f3f4;
+    --hedgedocs-bg-color-secondary: #dddddd;
+
+    --hedgedocs-header-color: var(--hedgedocs-accent-color);
+    --hedgedocs-header-fg-color: #f2f8f8;
+
+    --hedgedocs-fg-color-light: #333333;
+    --hedgedocs-fg-color: #202122;
+
+    --hedgedocs-link-color: #36c;
+    --hedgedocs-link-hover: #757575;
+    --hedgedocs-link-active-color: #00aedf;
+    --hedgedocs-new-link-color: #d73333;
+
+    --hedgedocs-input-bg-color: #ffffff;
+    --hedgedocs-input-fg-color: #202122;
+    --hedgedocs-input-border-color: var(--hedgedocs-input-bg-color);
+
+    --hedgedocs-button-bg-color: #bbbbbb;
+    --hedgedocs-button-bg-color-hover: #999999;
+    --hedgedocs-button-check-fg-color: #ffffff;
+    --hedgedocs-button-check-bg-color: var(--hedgedocs-accent-color);
+    --hedgedocs-button-accent-bg-color: var(--hedgedocs-accent-color);
+    --hedgedocs-button-accent-fg-color: #ffffff;
+    --hedgedocs-button-accent-bg-color-hover: var(--hedgedocs-accent-color-secondary);
+
+    --hedgedocs-table-header-bg-color: var(--hedgedocs-bg-color-secondary);
+    --hedgedocs-table-data-bg-color: var(--hedgedocs-frame-bg-color);
+    --hedgedocs-table-header-fg-color: var(--hedgedocs-fg-color);
+    --hedgedocs-table-border-color: #B2B2B2;
+
+    --hedgedocs-notice-note-header-color: rgba(68, 138, 255, 0.15);
+    --hedgedocs-notice-note-border-color: rgba(68, 138, 255, 0.75);
+    --hedgedocs-notice-info-header-color: rgba(0, 184, 212, 0.15);
+    --hedgedocs-notice-info-border-color: rgba(0, 184, 212, 0.75);
+    --hedgedocs-notice-warn-header-color: rgba(255, 145, 0, 0.15);
+    --hedgedocs-notice-warn-border-color: rgba(255, 145, 0, 0.75);
+    --hedgedocs-notice-example-header-color: rgba(118, 84, 250, 0.15);
+    --hedgedocs-notice-example-border-color: rgba(118, 84, 250, 0.75);
+}
+
+// Dark Theme
+.skin-theme-clientpref-night {
+    --hedgedocs-accent-color: #0f3885;
+    --hedgedocs-accent-color-secondary: #0d2a5f;
+
+    --hedgedocs-base-border-color: #414658;
+
+    --hedgedocs-frame-bg-color: #1a1c24;
+    
+    --hedgedocs-scrollbar-color: #888888;
+
+    --hedgedocs-bg-color: #151515;
+    --hedgedocs-bg-color-secondary: #272a35;
+
+    --hedgedocs-header-fg-color: #f2f8f8;
+
+    --hedgedocs-fg-color-light: #e0e6e6;
+    --hedgedocs-fg-color: #d2d2d2;
+
+    --hedgedocs-link-color: #88a3e8;
+    --hedgedocs-link-hover: #4e67f0;
+    --hedgedocs-link-active-color: #5082dc;
+    --hedgedocs-new-link-color: #fd7865;
+
+    --hedgedocs-input-bg-color: #222222;
+    --hedgedocs-input-fg-color: #d2d2d2;
+    --hedgedocs-input-border-color: var(--hedgedocs-input-bg-color);
+
+    --hedgedocs-button-bg-color: #333333;
+    --hedgedocs-button-bg-color-hover: #555555;
+    --hedgedocs-button-check-fg-color: #ffffff;
+    --hedgedocs-button-check-bg-color: var(--hedgedocs-accent-color);
+
+    --hedgedocs-table-header-bg-color: #252833;
+    --hedgedocs-table-data-bg-color: var(--hedgedocs-frame-bg-color);
+    --hedgedocs-table-header-fg-color: var(--hedgedocs-fg-color);
+    --hedgedocs-table-border-color: #3A3A3A;
+}
+
+
+// Setup Colors
+:root, .skin-theme-clientpref-night, html.skin-theme-clientpref-night {
+    --background-color-base: var(--hedgedocs-bg-color);
+    --background-color-interactive: var(--hedgedocs-bg-color-secondary);
+    --background-color-interactive-subtle: var(--hedgedocs-bg-color-secondary);
+    --background-color-neutral-subtle: var(--hedgedocs-bg-color);
+    --border-color-base: var(--hedgedocs-base-border-color);
+}
+body {
+    background-color: var(--hedgedocs-bg-color) !important;
+    color: var(--hedgedocs-fg-color) !important;
+}
+.mw-page-container {
+    background-color: transparent !important;
+}
+.mw-heading, h1, h2:not(.vector-pinnable-header-label), h3, h4, h5, h6 {
+    color: var(--hedgedocs-fg-color) !important;
+}

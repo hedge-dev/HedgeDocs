@@ -1,0 +1,33 @@
+/* HEDDGEDOCS FONTS */
+// Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+// Font Setup
+:root {
+    --font-size-medium: var(--hedgedocs-font-size);
+
+    --hedgedocs-font-size: 16px;
+    --hedgedocs-font-size-sidebars: 16px;
+    --hedgedocs-font-size-sidebars-pin-button: 13px; 
+
+    --hedgedocs-font: 'Roboto', -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
+    --hedgedocs-code-font: 'Roboto Mono', SFMono-Regular, Consolas, Menlo, monospace;
+}
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+body, .mw-body, h1, h2, .mw-createacct-benefits-heading, .oo-ui-menuToolGroup-tools .oo-ui-tool-title, .vector-sticky-header-context-bar-primary, .mw-body-content .mw-number-text span {
+    font-family: var(--hedgedocs-font) !important;
+}
+body .oo-ui-tool-name-preformatted .oo-ui-tool-link .oo-ui-tool-title, pre, code, tt, kbd, samp, .mw-code {
+    font-family: var(--hedgedocs-code-font) !important;
+}
+h1 {
+    font-weight: bold;
+}
+.mw-heading1, h1, .mw-heading2, h2 {
+    //border: none;
+}
