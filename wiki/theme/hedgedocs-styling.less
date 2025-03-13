@@ -372,7 +372,11 @@ pre {
     white-space: pre;
 }
 // Videos
-video.mw-file-element {
+figure.embedvideo, figure.embedvideo video {
+    height: auto !important;
+    width: 640px !important;
+}
+figure.embedvideo[data-service="local-embed"] span.embedvideo-wrapper {
     height: auto !important;
     width: 640px !important;
 }
